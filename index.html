@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1
+        //  let number = prompt("Введите число --");
+
+        //  if (number % 2 === 0) {
+        //     alert("Парное");
+        //  } else {
+        //     alert("Не парное");
+        //  }
+
+        //2
+        // let number1 = prompt("Первое число --");
+        // let number2 = prompt("Второе число --");
+
+        // if (number1 < number2) {
+        //     alert("Минимальное число: " + number1);
+        // } else if (number2 < number1) {
+        //     alert("Минимальное число: " + number2);
+        // } else {
+        //     alert("Числа равны");
+        // }
+
+        //третье
+        // let number = prompt("Введите число --");
+
+        // if (number > 0) {
+        //     alert("Число положительно");
+        // } else if (number < 0) {
+        //     alert("Число отрицательное");
+        // } else {
+        //     alert("Число ноль");
+        // }
+
+        //четвертое
+        // let number1 = prompt("Первое число --");
+        // let number2 = prompt("Второе число --");
+        // let number3 = prompt("Третье число --");
+
+        // let max = number1;
+
+        // if (number2 > max) {
+        //     max = number2;
+        // }
+
+        // if (number3 > max) {
+        //     max = number3;
+        // }
+
+        // alert("Наибольшее число -- " + max);
+
+
+        //калькулятор
+        // let a = parseInt(prompt("Введите первое число -- "));
+        // let b = parseInt(prompt("Введите второе число --"));
+
+        // let operation = prompt(
+        //     "Выберите действие:\n1)  + \n2) - \n3)  * \n4) / "
+        // );
+
+        // let result;
+
+        // if (operation == 1) {
+        //     result = a + b;
+        //     alert("Результат  + : " + result);
+        // } else if (operation == 2) {
+        //     result = a - b;
+        //     alert("Результат  - : " + result);
+        // } else if (operation == 3) {
+        //     result = a * b;
+        //     alert("Результат  * : " + result);
+        // } else if (operation == 4) {
+        //     if (b !== 0) {
+        //         result = a / b;
+        //         alert("Результат  / : " + result);
+        //     } else {
+        //         alert("ДЕЛИТЬ НА НОЛЬ НЕЛЬЗЯ");
+        //     }
+        // } else {
+        //     alert("ОШИБКА");
+        // }
+
+
+        //шестое
+        // let number = parseInt(prompt("Введите число -- "));
+
+        // if (number >= 1 && number <= 30) {
+        //     alert("Число отсносится к диапазону с 1 до 30.");
+        // } else {
+        //     alert("Число не относится.");
+        // }
+
+        //седьмое
+        // let x = parseInt(prompt("Введите число X --"));
+        // let y = parseInt(prompt("Введите число Y --"));
+
+        // if (y === 0) {
+        //     alert("ДЕЛИТЬ НА НОЛЬ НЕЛЬЗЯ");
+        // } else if (x % y === 0) {
+        //     alert("Число X кратное числу Y ");
+        // } else {
+        //     alert("Число X не кратное числу Y ");
+        // }
+
+        //восьмое
+        // let number = parseInt(prompt("Введите число --"));
+
+        // let krat3 = number % 3 === 0;
+        // let krat5 = number % 5 === 0;
+        // let krat7 = number % 7 === 0;
+
+        // if (krat3) {
+        //     alert("Число кратное 3");
+        // } else {
+        //     alert("Число не кратное 3");
+        // }
+
+        // if (krat5) {
+        //     alert("Число кратное 5");
+        // } else {
+        //     alert("Число не кратное 5 ");
+        // }
+
+        // if (krat7) {
+        //     alert("Число кратное 7 ");
+        // } else {
+        //     alert("Число не кратное 7 ");
+        // }
+
+        //девятое
+        // let number = parseInt(prompt("Введите число --"));
+        // let value;
+
+        // if (number < 0) {
+        //     value = number * -1; 
+        // } else {
+        //     value = number;
+        // }
+
+        // alert("Модуль числа -- " + value);
+
+        let height = parseInt(prompt("Ваш рост (в см) --"));
+        let weight = parseInt(prompt("Ваш вес (в кг) --"));
+
+        let bestW = height - 110;
+        let weightD = weight - bestW;
+
+        if (weightD > 0) {
+            alert("Вам надо скинуть " + weightD + " кг, чтобы был идеальный вес");
+        } else if (weightD < 0) {
+            alert("Вам надо набрать " + (weightD * -1) + " кг, чтобы был идеальный вес");
+        } else {
+            alert("ВАШ ВЕС СУПЕР ИДЕАЛЬНЫЙ");
+        }
+
+    </script>
+</body>
+
+</html>
